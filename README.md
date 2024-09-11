@@ -17,8 +17,9 @@
 
 （可选）很多聊天模型为了能够正确回答问题，需要一个预设的提示模板。您可以通过在模型文件中添加 TEMPLATE 指令来设定一个默认的提示模板：
 
-```FROM ./mistral-7b-v0.1.Q4_0.gguf
-TEMPLATE "[INST] {{ .Prompt }} [/INST]"```
+```FROM ./mistral-7b-v0.1.Q4_0.gguf``
+
+```TEMPLATE "[INST] {{ .Prompt }} [/INST]"```
 
 步骤 2：创建 Ollama 模型
 
